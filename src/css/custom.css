@@ -94,3 +94,16 @@ figcaption {
   text-align: center;
   color: #7b7b7b;
 }
+
+@media (min-width: 997px) {
+  [class*='docItemContainer'],
+  .theme-doc-markdown {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class*='docItemCol'] {
+    max-width: 100% !important;
+  }
+}

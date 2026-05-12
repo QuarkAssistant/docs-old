@@ -29,6 +29,8 @@ const config: Config = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: './sidebars.ts',
+          editUrl:
+            'https://github.com/tscircuit/docs-old/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -55,6 +57,8 @@ const config: Config = {
         path: 'api-reference',
         routeBasePath: 'api-reference',
         sidebarPath: './sidebars.ts',
+        editUrl:
+          'https://github.com/tscircuit/docs-old/edit/main/api-reference/',
       },
     ],
   ],
@@ -106,16 +110,16 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'apiSidebar',
           label: 'API Reference',
-          docsPluginId: 'api'
+          docsPluginId: 'api',
         },
         {
-          href: 'mailto:contact@tscircuit.com',
-          label: 'Support',
+          href: 'https://tscircuit.com/editor',
+          label: 'Try Online',
           position: 'right',
         },
         {
-          href: 'https://tscircuit.com/trending',
-          label: 'Find Packages',
+          href: 'https://tscircuit.com/join',
+          label: 'Discord',
           position: 'right',
         },
         {
