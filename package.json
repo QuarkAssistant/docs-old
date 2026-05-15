@@ -19,7 +19,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "generate-soup-reference": "tsx scripts/create-soup-reference-snippet.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

@@ -141,6 +141,7 @@ function jsonSchemaToMarkdownTable(schema: any): string {
   return markdownTable
 }
 
+async function main() {
 const skip_zod_keys = ["any_soup_element"]
 for (const element_name of Object.keys(B)) {
   if (skip_zod_keys.includes(element_name)) {
@@ -213,6 +214,12 @@ fs.writeFileSync(
     parser: "mdx",
   }),
 )
+}
+
+main().catch((error) => {
+  console.error(error)
+  process.exitCode = 1
+})
 
 // const handled_elements: string[] = []
 
